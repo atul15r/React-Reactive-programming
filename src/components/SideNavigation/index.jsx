@@ -5,6 +5,7 @@ import { newReleasesActions, featuredPlaylistActions, categoriesActions } from '
 import { useSelector, useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import shortid from 'shortid';
+import { default_img } from 'utils';
 
 export const SideNavigation = () => {
 	const [user, setUser] = React.useState({});
@@ -45,11 +46,7 @@ export const SideNavigation = () => {
 	return (
 		<div className="bg-purple-700 col-span-2 md:col-span-1 h-screen">
 			<section className="w-full">
-				<img
-					src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/raya-and-the-last-dragon-et00145984-09-12-2020-04-43-42.jpg"
-					className="w-12 h-12 rounded-full m-auto block mt-5 shadow-2xl"
-					alt="profile"
-				/>
+				<img src={default_img} className="w-12 h-12 rounded-full m-auto block mt-5 shadow-2xl" alt="profile" />
 				<p className="text-white text-center py-2">{user?.display_name || 'Raya'}</p>
 
 				<section className="mt-8">
