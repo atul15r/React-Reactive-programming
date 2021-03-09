@@ -24,7 +24,7 @@ export function Footer() {
 				if (pro === track?.duration_ms / 1000) clearInterval();
 			}, 5000);
 		}
-	}, [isPlaying]);
+	}, [isPlaying, track]);
 
 	return (
 		<div className="w-full h-16 flex justify-center fixed bottom-0 bg-white border border-gray-200 shadow-md">
@@ -33,6 +33,7 @@ export function Footer() {
 					<img
 						src={track?.album?.images[0]?.url || default_img}
 						className="w-12 h-12 rounded-md shadow-2xl"
+						alt="album"
 					/>
 				</section>
 

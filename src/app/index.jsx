@@ -8,8 +8,6 @@ import { ToastContainer, toast, Zoom } from 'react-toastify';
 import { isMobile } from 'utils';
 import 'react-toastify/dist/ReactToastify.css';
 
-//		spotifyApi.getMyDevices().then(res => console.log('devices', res));
-
 export const App = () => {
 	const { token } = useSelector(state => state.app);
 	const dispatch = useDispatch();
@@ -21,7 +19,7 @@ export const App = () => {
 		if (token) {
 			dispatch(appActions.setToken(token));
 		}
-	}, []);
+	}, [dispatch]);
 
 	return (
 		<section>

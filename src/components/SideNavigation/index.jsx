@@ -40,7 +40,7 @@ export const SideNavigation = () => {
 				)
 			);
 		}
-	}, [token]);
+	}, [token, dispatch, spotifyApi]);
 
 	return (
 		<div className="bg-purple-700 col-span-2 md:col-span-1 h-screen">
@@ -48,6 +48,7 @@ export const SideNavigation = () => {
 				<img
 					src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/raya-and-the-last-dragon-et00145984-09-12-2020-04-43-42.jpg"
 					className="w-12 h-12 rounded-full m-auto block mt-5 shadow-2xl"
+					alt="profile"
 				/>
 				<p className="text-white text-center py-2">{user?.display_name || 'Raya'}</p>
 

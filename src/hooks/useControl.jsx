@@ -7,7 +7,8 @@ import shortid from 'shortid';
 export const useControl = () => {
 	var spotifyApi = new SpotifyWebApi();
 	const dispatch = useDispatch();
-	const { isPlaying, shuffle, repeat, track } = useSelector(state => state.app);
+
+	const { shuffle, repeat, track } = useSelector(state => state.app);
 
 	const toastId = shortid.generate();
 	const playSong = ({ track }) => {
@@ -17,7 +18,6 @@ export const useControl = () => {
 			})
 			.then(res => {
 				spotifyApi.getMyCurrentPlayingTrack().then(r => {
-					console.log('current song', r?.item);
 					dispatch(appActions.setCurrentTrack(r?.item));
 					dispatch(appActions.setIsPlaying(true));
 				});
