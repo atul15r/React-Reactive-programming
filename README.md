@@ -1,4 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Spotify React Test App (It allows you to play Songs)
+
+![Alt text](screenshots/s5.gif?raw=true "Video demonstration")
+![Alt text](screenshots/s4.png?raw=true "Title")
+![Alt text](screenshots/s3.png?raw=true "Title")
+![Alt text](screenshots/s2.png?raw=true "Title")
+![Alt text](screenshots/s1.png?raw=true "Title")
+
+
+
+
 
 ## Available Scripts
 
