@@ -14,11 +14,7 @@ const rootPersistConfig = {
 
 const pReducer = persistReducer(rootPersistConfig, rootReducer);
 const epicMiddleware = createEpicMiddleware();
-const middleware = [
-	// ...getDefaultMiddleware({serializableCheck: false}),
-	epicMiddleware,
-	logger
-];
+const middleware = [epicMiddleware, logger];
 
 const store = configureStore({
 	reducer: pReducer,
