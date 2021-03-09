@@ -1,4 +1,4 @@
-Spotify React Test App (It allows you to play track.)
+Spotify React Test App (It allows you to play Songs)
 
 ![Alt text](screenshots/s5.gif?raw=true "Video demonstration")
 ![Alt text](screenshots/s4.png?raw=true "Title")
