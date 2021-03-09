@@ -41,7 +41,7 @@ export const SideNavigation = () => {
 				)
 			);
 		}
-	}, [token, dispatch, spotifyApi]);
+	}, [token]);
 
 	return (
 		<div className="bg-purple-700 col-span-2 md:col-span-1 h-screen">
