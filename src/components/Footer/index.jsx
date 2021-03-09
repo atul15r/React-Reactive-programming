@@ -24,7 +24,7 @@ export function Footer() {
 				if (pro === track?.duration_ms / 1000) clearInterval();
 			}, 5000);
 		}
-	}, [isPlaying, track]);
+	}, [isPlaying]);
 
 	return (
 		<div className="w-full h-16 flex justify-center fixed bottom-0 bg-white border border-gray-200 shadow-md">
