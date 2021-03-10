@@ -1,5 +1,7 @@
 Spotify React Test App (It allows you to play Songs)
 
+**** Progress bar percentage is not working correctly, it's upto you. Intension was only to demonstrate the reactive programming setup/use in react redux.
+
 ![Alt text](screenshots/s5.gif?raw=true "Video demonstration")
 ![Alt text](screenshots/s4.gif?raw=true "Title")
 ![Alt text](screenshots/s3.png?raw=true "Title")
