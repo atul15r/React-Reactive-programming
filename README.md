@@ -1,5 +1,8 @@
 Spotify React Test App (It allows you to play Songs)
 
+####### This will stop works after 15th of March, bcos I had purchased spotify mini plan (Rs.25/week) on 9th of March. So if u r using ur own clientId,and clientSecret make sure that u have spotify premium plan (Mini plan cost Rs.25/week).
+
+
 **** Progress bar percentage is not working correctly, it's upto you. Intension was only to demonstrate the reactive programming setup/use in react redux.
 
 ![Alt text](screenshots/s5.gif?raw=true "Video demonstration")
